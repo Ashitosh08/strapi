@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "singularName": "school",
+    "pluralName": "schools",
+    "displayName": "School",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schoolName": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "facultyStrength": {
+      "type": "integer",
+      "required": false
+    },
+    "studentStrength": {
+      "type": "integer",
+      "required": false
+    },
+    "contactNumber": {
+      "type": "biginteger",
+      "required": false,
+      "unique": false
+    },
+    "paymentTenure": {
+      "type": "integer"
+    },
+    "organization": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organization.organization",
+      "inversedBy": "schools"
+    },
+    "Address": {
+      "type": "richtext"
+    },
+    "totalGrades": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ]
+    }
+  }
+}

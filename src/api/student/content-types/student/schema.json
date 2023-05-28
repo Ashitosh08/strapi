@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "studentName": {
+      "type": "string"
+    },
+    "rollNo": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "guardianName": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "address": {
+      "type": "string"
+    },
+    "studentId": {
+      "type": "integer"
+    },
+    "registrationNo": {
+      "type": "integer"
+    },
+    "class": {
+      "type": "richtext"
+    },
+    "section": {
+      "type": "richtext"
+    },
+    "teacher": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Absent",
+        "Present"
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "singularName": "organization",
+    "pluralName": "organizations",
+    "displayName": "Organization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "organizationName": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "contactPerson": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "totalSchools": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "studentStrength": {
+      "type": "integer",
+      "required": false
+    },
+    "facultyStrength": {
+      "type": "integer",
+      "required": false
+    },
+    "address": {
+      "type": "richtext",
+      "required": false
+    },
+    "schools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::school.school",
+      "mappedBy": "organization"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "singularName": "teacher",
+    "pluralName": "teachers",
+    "displayName": "teacher",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "string"
+    },
+    "mobileNo": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "class": {
+      "type": "richtext"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "qualification": {
+      "type": "enumeration",
+      "enum": [
+        "Diploma",
+        "Bachelor's Degree",
+        "Master's Degree",
+        "Ph.D"
+      ]
+    },
+    "employeeType": {
+      "type": "enumeration",
+      "enum": [
+        "Permanent",
+        "Contract"
+      ]
+    }
+  }
+}
