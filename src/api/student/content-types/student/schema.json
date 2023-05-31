@@ -42,9 +42,6 @@
     "registrationNo": {
       "type": "integer"
     },
-    "class": {
-      "type": "richtext"
-    },
     "section": {
       "type": "richtext"
     },
@@ -57,6 +54,12 @@
         "Absent",
         "Present"
       ]
+    },
+    "class": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::class.class",
+      "inversedBy": "students"
     }
   }
 }

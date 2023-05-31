@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "fullName": {
-      "type": "string"
-    },
     "gender": {
       "type": "string"
     },
@@ -54,6 +51,9 @@
         "Permanent",
         "Contract"
       ]
+    },
+    "fullName": {
+      "type": "string"
     }
   }
 }

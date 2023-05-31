@@ -4,7 +4,7 @@
   "info": {
     "singularName": "class",
     "pluralName": "classes",
-    "displayName": "Class",
+    "displayName": "class",
     "description": ""
   },
   "options": {
@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "className": {
-      "type": "string"
-    },
     "roomNo": {
-      "type": "biginteger"
+      "type": "integer"
+    },
+    "numberOfStudent": {
+      "type": "integer"
     },
     "teacherName": {
       "type": "enumeration",
@@ -26,8 +26,14 @@
         "mahesh"
       ]
     },
-    "numberOfStudent": {
-      "type": "integer"
+    "students": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::student.student",
+      "mappedBy": "class"
+    },
+    "className": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_tables",
+  "info": {
+    "singularName": "time-table",
+    "pluralName": "time-tables",
+    "displayName": "timeTable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schoolStartTime": {
+      "type": "datetime"
+    },
+    "schoolEndTime": {
+      "type": "datetime"
+    },
+    "breakStartTime": {
+      "type": "datetime"
+    },
+    "breakEndTime": {
+      "type": "datetime"
+    },
+    "periodLength": {
+      "type": "integer"
+    },
+    "schedule": {
+      "type": "json"
+    }
+  }
+}
